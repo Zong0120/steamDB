@@ -1,0 +1,83 @@
+.game_container{
+    background-color: transparent;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+
+.game_container .logo{
+    width: auto;
+    height: 100%;
+}
+
+.game_container .logo img{
+    display: block;
+    flex-shrink: 0;
+    height: 430px;
+    opacity: 0.9;
+    margin-top: 95px;
+}
+
+.game_container .tab_caption{
+    font-size: 50px;
+    font-weight: 600;
+    color:var(--text-color);
+}
+
+.game_container .table{
+    width: 1000px;
+    font-size: 20px;
+    border-collapse:collapse;
+    border: 1px solid var(--text-color);
+    background-color: transparent;
+    color: var(--text-color);
+}
+.table th,td{
+    border: 1px solid var(--text-color);
+    padding: 1rem;
+}
+
+.table a{
+    text-decoration: none;
+    color: var(--content-text-color);
+}
+
+.table a:hover{
+    color: var(--content-a-hover);
+}
+.table button{
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    color: var(--text-color);
+}
+
+.table .add_btn{
+    left: 90%;
+    position: relative;
+}
+
+.table #td_type{
+    border: none;
+    text-align: left;
+    display: flex;
+}
+#td_type #type_box{
+    color: var(--text-color);
+    background-color: transparent;
+    width: 150px;
+    border: 1px solid var(--text-color);
+    border-radius: 15px;
+    display: flex;
+    margin-left: 1rem;
+}
+
+#type_box input{
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    outline: none;
+}

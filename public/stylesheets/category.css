@@ -1,0 +1,77 @@
+.categoery_box{
+    position:relative;
+    margin: 200px auto;
+    width: 80%;
+    opacity: 0.6;
+}
+.categoery_box .container_title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--content-text-color);
+}
+.categoery_box img{
+    display: block;
+    max-width: 100%;
+    height: 215px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.categoery_box .box{
+    display: flex;
+    margin: 1rem;
+    border: 2px solid var(--text-color);
+    padding: 1rem;
+    background-color: var(--content-box-color);
+}
+
+.box .content_box{
+    width: 100%;
+    text-align: center;
+}
+
+.categoery_box a{
+    text-decoration: none;
+    color: var(--content-text-color);
+    font-size: 30px;
+    font-weight:600;
+    line-height:75px;
+}
+
+.categoery_box a:hover{
+    color: var(--content-a-hover);
+}
+
+.categoery_box p{
+    text-decoration: none;
+    color: var(--content-text-color);
+    font-weight: 600;
+    line-height:50px;
+    font-size: 20px;
+}
+
+.box .p_price{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 600;
+    line-height:125px;
+}
+/* 
+   
+    <div class="categoery_box">        
+        <div class="box">
+            <a href="/public/target.html?game_name=Neon White"><img src="/public/images/game/1533420.jpg"></a>
+            <div class="content_box">
+                <a href="/public/target.html?game_name=Neon White">
+                    <span>Neon White</span>
+                </a>
+                <P class="p_type">冒險 射擊 動作</P>
+                
+            </div>
+            <p class="p_price">NT$459</p>   
+        </div>
+    </div>
+*/
+

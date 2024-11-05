@@ -1,0 +1,35 @@
+.cate-menu{
+    margin: 250px auto;
+    width: 1500px;
+}
+
+.cate-menu h1{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.cate-menu a{
+    text-decoration: none;
+    font-size: 50px;
+    color: var(--text-color);
+    margin:3rem;
+    box-shadow: 0 5px 5px var(--cate-menu-a);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+
+.cate-menu a:hover{
+    background-color: var(--cate-menu-a-hover);
+    color: var(--cate-menu-a-hover-text);
+}
+
+body.dark .cate-menu a{
+    box-shadow: 0 5px 5px var(--cate-menu-a);
+}
+
+body.dark .cate-menu a:hover{
+    box-shadow: 0 5px 5px var(--cate-menu-a-hover);
+}

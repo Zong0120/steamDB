@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/target.css">
+    <title>target</title>
+</head>
+<body>
+    <div class="navigation"></div>
+    
+    <div class="game_container">
+        <div class="logo" id="game_logo">
+            
+        </div>
+        <table class="table">
+            <caption id="table_caption" class="tab_caption">
+            </caption>
+            <tr>
+                <th>Game ID</th>
+                <td id="td_id"></td>
+            </tr>
+            <tr>
+                <th>Game Name</th>
+                <td id="td_name"></td>
+            </tr>
+            <tr>
+                <th>Game Price</th>
+                <td id="td_price">NT$</td>
+            </tr>
+            <tr>
+                <th>Game Date</th>
+                <td id="td_date"></td>
+            </tr>
+            <tr>
+                <th>Game Company</th>
+                <td id="td_company"></td>
+            </tr>
+            <tr>
+                <th class="">Game OS</th>
+                <td id="td_OS"></td>
+            </tr>
+            <tr>
+                <th>Game type</th>
+                <td id="td_type">
+                    <button class='bx bx-plus-circle add_btn' onclick="addtype()"></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./jquery/jquery-3.6.4.min.js"></script>
+    <script src="./jquery/jquery-1.4.1.cookie.js"></script>
+    <script src="./javascripts/target.js"></script>
+</body>
+</html>

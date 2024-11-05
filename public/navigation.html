@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./stylesheets/navigation.css">
+    <title>steam</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="header">
+            <div class="image-text">
+                <i class='bx bx-menu toggle'></i>
+                <a href="./index.html" class="logo-a">
+                    <i class='bx bxl-steam'></i>
+                    <span>SteamDB</span>
+                </a>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search..." id="game_name" class="search_input" value="">
+                <button class='bx bx-search icon' onclick="search()"></button>
+            </div>
+        </div>
+        <div class="sidebar close">            
+            <div class="menu-bar">
+                <div class="menu">
+                    <div class="image-text">
+                        <i class='bx bx-menu toggle2'></i>
+                        <a href="./index.html" class="logo-a">
+                            <i class='bx bxl-steam'></i>
+                            <span>SteamDB</span>
+                        </a>
+                    </div>
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="./index.html">
+                                <i class='bx bx-home-alt-2 icon' ></i>
+                                <span class="text nav-text">首頁</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="/public/category_menu.html">
+                                <i class='bx bx-bullseye icon'></i>
+                                <span class="text nav-text">類別</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="/public/category.html?category=series">
+                                <i class='bx bx-objects-horizontal-left icon'></i>
+                                <span class="text nav-text">系列</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="/public/category.html?category=random_search">
+                                <i class='bx bxs-search-alt-2 icon'></i>
+                                <span class="text nav-text">隨機探索</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="/public/category.html?category=company">
+                                <i class='bx bxs-business icon'></i>
+                                <span class="text nav-text">遊戲公司</span>
+                            </a>
+                        </li>
+                        <li class="nav-link box">
+                            <a href="#">
+                                <i class='bx bx-desktop icon'></i>
+                                <span class="text nav-text">支援系統</span>
+                            </a>
+                            <ul class="nav-link-box">
+                                <a href="/public/category.html?category=game_OS&game_OS=macOS"><li class="text nav-text">MacOS</li></a>
+                                <a href="/public/category.html?category=game_OS&game_OS=Windows"><li class="text nav-text">Windos</li></a>
+                                <a href="/public/category.html?category=game_OS&game_OS=Linux"><li class="text nav-text">Linux</li></a>
+                            </ul>
+                        </li>
+                        <li class="nav-link">
+                            <a href="/public/category.html?category=game_date&game_date=newgame">
+                                <i class='bx bx-globe icon'></i>
+                                <span class="text nav-text">新遊戲</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="./aboutteam.html">
+                                <i class='bx bx-user icon'></i>
+                                <span class="text nav-text">關於</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="bottom-content">
+                    </li>
+                    <li class="mode">
+                        <div class="moon-sun">
+                            <i class='bx bx-moon icon moon' ></i>
+                            <i class='bx bx-sun icon sun' ></i>
+                        </div>
+                        <span class="mode-text text">Light Mode</span>
+    
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+    
+        <div class="navbar_link">    
+            <ul class="navbar_menu_main">
+                <li class="tab-1"><a href="#">選單</a>
+                    <div class="menu_sub">
+                        <div class="menu_col">
+                            <a href="./index.html" class="menu-category">首頁</a>
+                            <a href="/public/category.html?category=game_date&game_date=oldgame" class="menu-category">老人遊戲</a>
+                            <a href="/public/category.html?category=game_date&game_date=newgame" class="menu-category">近期遊戲</a>
+                            <a href="/public/category.html?category=company" class="menu-category">遊戲公司</a>
+                            <a href="./aboutteam.html" class="menu-category">關於</a>
+                        </div>
+                    </div>
+                </li>
+                
+                
+                <li class="tab-1"><a href="#">類別</a>
+                    <div class="menu_sub many">
+                        <div class="menu_col_1">
+                            <h3 class="menu-category-sp">特殊欄位</h3>
+                            <a href="/public/category.html?category=game_price&game_price=0" class="menu-category">免費遊玩</a>
+                            <a href="/public/category.html?category=game_type&game_type=支援控制器" class="menu-category">支援控制器</a>
+                            <a href="/public/category.html?category=game_type&game_type=遠端遊玩" class="menu-category">遠端遊玩</a>
+                            <a href="/public/category.html?category=game_type&game_type=原聲帶" class="menu-category">原聲帶</a>
+                        </div>
+    
+                        <div class="menu_col_2">
+                            <h3 class="menu-category-sp">類型</h3>
+                            <a href="/public/category.html?category=game_type&game_type=動作" class="menu-category">動作</a>
+                            <a href="/public/category.html?category=game_type&game_type=心理" class="menu-category">心理</a>
+                            <a href="/public/category.html?category=game_type&game_type=可愛" class="menu-category">可愛</a>
+                            <a href="/public/category.html?category=game_type&game_type=犯罪" class="menu-category">犯罪</a>
+                            <a href="/public/category.html?category=game_type&game_type=生存" class="menu-category">生存</a>
+                            <a href="/public/category.html?category=game_type&game_type=休閒" class="menu-category">休閒</a>
+                            <a href="/public/category.html?category=game_type&game_type=合作" class="menu-category">合作</a>
+                        </div>
+    
+                        <div class="menu_col_3">
+                            <br>
+                            <a href="/public/category.html?category=game_type&game_type=角色扮演" class="menu-category">角色扮演</a>
+                            <a href="/public/category.html?category=game_type&game_type=氛圍" class="menu-category">氛圍</a>
+                            <a href="/public/category.html?category=game_type&game_type=冒險" class="menu-category">冒險</a>
+                            <a href="/public/category.html?category=game_type&game_type=砍殺" class="menu-category">砍殺</a>
+                            <a href="/public/category.html?category=game_type&game_type=射擊" class="menu-category">射擊</a>
+                            <a href="/public/category.html?category=game_type&game_type=暴力" class="menu-category">暴力</a>
+                            <a href="/public/category.html?category=game_type&game_type=恐怖" class="menu-category">恐怖</a>
+                            
+                        </div>
+    
+                        <div class="menu_col_4">
+                            <br>
+                            <a href="/public/category.html?category=game_type&game_type=動作" class="menu-category">動作</a>
+                            <a href="/public/category.html?category=game_type&game_type=悠閒" class="menu-category">悠閒</a>
+                            <a href="/public/category.html?category=game_type&game_type=探索" class="menu-category">探索</a>
+                            <a href="/public/category.html?category=game_type&game_type=線性" class="menu-category">線性</a>
+                            <a href="/public/category.html?category=game_type&game_type=單人" class="menu-category">單人</a>
+                            <a href="/public/category.html?category=game_type&game_type=多人" class="menu-category">多人</a>
+                            
+                        </div>
+                        <div class="menu_col_5">
+                            <h3 class="menu-category-sp">主題</h3>
+                            <a href="/public/category.html?category=game_type&game_type=開放世界" class="menu-category">開放世界</a>
+                            <a href="/public/category.html?category=game_type&game_type=懸疑" class="menu-category">懸疑</a>
+                            <a href="/public/category.html?category=game_type&game_type=邏輯" class="menu-category">邏輯</a>
+                            <a href="/public/category.html?category=game_type&game_type=策略" class="menu-category">策略</a>
+                            <a href="/public/category.html?category=game_type&game_type=解謎" class="menu-category">解謎</a>
+                            <h3 class="menu-category-sp">更多</h3>
+                            <a href="/public/category.html?category=game_type_more" class="menu-category">其他...</a>
+                        </div>
+                    </div>
+                </li>
+                        
+                <li class="tab-1"><a href="#">系列</a>
+                    <div class="menu_sub">
+                        <div class="menu_col" id="menu_series">
+                            <a href="/public/category.html?category=game_series&game_series=Monster Hunter" class="menu-category">Monster Hunter</a>
+                            <a href="/public/category.html?category=game_series&game_series=Resident Evil" class="menu-category">Resident Evil</a>
+                            <a href="/public/category.html?category=game_series&game_series=Grand Theft Auto" class="menu-category">Grand Theft Auto</a>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="tab-1"><a href="#">預算</a>
+                    <div class="menu_sub">
+                        <div class="menu_col">
+                            <a href="/public/category.html?category=game_price&game_price=0" class="menu-category">客家</a>
+                            <a href="/public/category.html?category=game_price&game_price=100" class="menu-category">100</a>
+                            <a href="/public/category.html?category=game_price&game_price=500" class="menu-category">500</a>
+                            <a href="/public/category.html?category=game_price&game_price=1000" class="menu-category">1000</a>
+                            <a href="/public/category.html?category=game_price&game_price=1500" class="menu-category">1500</a>
+                            <a href="/public/category.html?category=game_price&game_price=10000" class="menu-category">盤子</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+    
+    <script src="./jquery/jquery-3.6.4.min.js"></script>
+    <script src="./jquery/jquery-1.4.1.cookie.js"></script>
+    <script src="./javascripts/navigation.js"></script>
+</body>
+</html>
